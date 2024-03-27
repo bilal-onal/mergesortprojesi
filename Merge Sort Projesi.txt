@@ -1,0 +1,38 @@
+Bölme Aşaması:
+İlk olarak dizi ikiye bölünür:
+[16, 21, 11] ve [8, 12, 22]
+
+Bölme Aşaması (Sol Taraf):
+Sol taraftaki alt dizi de bölünür:
+[16] ve [21, 11]
+
+Bölme Aşaması (Sağ Taraf):
+Sağ taraftaki alt dizi de bölünür:
+[21] ve [11]
+
+Birleştirme Aşaması (Sağ Alt):
+Sağ alt alt dizileri sıralanır ve birleştirilir:
+[11, 21]
+
+Birleştirme Aşaması (Sol Alt):
+Sol alt alt dizisi zaten tek elemandan oluştuğu için sıralama gerektirmez.
+
+Birleştirme Aşaması (Sol Taraf):
+Sol alt ve sağ alt birleştirilir:
+[11, 16, 21]
+
+Bölme Aşaması (Sağ Taraf):
+Sağ taraftaki alt dizi de birleştirilir:
+[8, 12, 22]
+
+Birleştirme Aşaması (Sağ Taraf):
+Sağ alt alt dizisi sıralanır ve birleştirilir:
+[8, 12, 22]
+
+Birleştirme Aşaması (Tüm Dizi):
+Sol taraf ve sağ taraf birleştirilir:
+[8, 11, 12, 16, 21, 22]
+
+Bu adımlar sonucunda verilen dizinin sıralı hali elde edilmiş olur.
+
+Merge sort'un Big-O gösterimi O(n log n) şeklindedir. Bu, n elemanlı bir dizinin merge sort ile sıralanırken ortalama ve en kötü durumda n log n karşılaştırma işlemi gerektireceği anlamına gelir. Bu algoritmanın genellikle etkili bir sıralama algoritması olarak kabul edilir.
